@@ -1,0 +1,60 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    color: black;
+    justify-content: center;
+}
+
+.img{
+    height: 200px;
+    width: 150px;
+}
+
+
+
+.padreContent {
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+.cuadroProduct {
+    display:flex;
+    align-items: center;
+    background:url("home-img.jpeg") no-repeat center;
+    background-size: cover;
+    block-size: 100vh;
+
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 200px;
+    gap: 60px;
+
+}
+
+.cuadro-padre{
+    background-color: azure;
+}
+
+
+
+
+
+
+
+/*.cuerpo-tarjeta{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem,1fr));
+}*/

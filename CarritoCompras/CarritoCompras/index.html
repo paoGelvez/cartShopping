@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <div class="padreContent">
+
+        <div class="padre">
+
+            <h1>carrito de compras</h1>
+            
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                  <tr id="footer">
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                  </tr>
+                </tfoot>
+            </table>
+
+            <template id="template-footer">
+                <th scope="row" colspan="2">Total productos</th>
+                <td>10</td>
+                <td>
+                    <button class="btn" id="vaciar-carrito">
+                        vaciar todo
+                    </button>
+                </td>
+                <td class="valor">$ <span>5000</span></td>
+            </template>
+            <hr>
+            
+
+            <template id="template-carrito">
+                <tr>
+                  <th scope="row">id</th>
+                  <td>Café</td>
+                  <td>1</td>
+                  <td>
+                      <button class='agregar'>
+                          +
+                      </button>
+                      <button class='quitar'>
+                          -
+                      </button>
+                  </td>
+                  <td>$ <span>500</span></td>
+                </tr>
+            </template>
+        </div>
+    
+        
+        <div class="cuadroProduct">
+            <div class="row" id="cards"></div>
+            <template id="tarjeta-template">
+                <div class="cuadro-padre">
+                    <div class="tarjeta">
+                        <img src="" alt="" class="img">
+                        <div class="cuerpo-tarjeta">
+                            <h5>Titulo</h5>
+                            <p>Precio</p>
+                            <button class="Boton-compra">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+
+        </div>
+       
+    
+        
+
+
+
+    </div>
+
+   
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>  
